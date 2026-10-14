@@ -5,6 +5,24 @@ import os
 load_dotenv()
 
 
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(
+            135deg,
+            #89CFF0,
+            #4682B4,
+            #191970
+        );
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 API_KEY=os.getenv('WEATHER_API_KEY')
 
 st.set_page_config(page_title='Weather App',page_icon='🌞')
